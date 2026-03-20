@@ -20,22 +20,39 @@ export class VetRecPage {
    * Update selectors to match the real login form.
    */
   async login(username: string, password: string) {
-    await this.page.fill('input[name="username"]', username);
+    
+    await this.page.getByPlaceholder('Enter your email address').fill('cefit.pablo@gmail.com');
+    await this.page.getByRole('button', { name: /continue/i }).click();
+    await this.page.getByPlaceholder('Enter your password').fill('VetRecQA!');
+    await this.page.getByRole('button', { name: /continue/i }).click();
+
+
+    /*await this.page.fill('input[name="username"]', username);
     await this.page.fill('input[name="password"]', password);
     await this.page.click('button[type="submit"]');
+    **/
   }
+
 
   /**
    * Grant microphone permission for the current context.
    */
-  async grantMicrophonePermission() {
+  /**async grantMicrophonePermission() {
+     debugger;
     await this.page.context().grantPermissions(['microphone'], { origin: this.page.url() });
   }
+    */
 
   /**
    * Upload a .webm file using an <input type="file"> element.
    */
   async uploadWebmFile(fileInputSelector: string, filePath: string) {
+
+    await this.page.getByRole('tab', { name: 'Upload' }).click();
+    await this.page.setInputFiles('#dropzone-file', 'tests\fixtures\InputSound.webm');
+    await this.page.getByRole('button', { name: /Upload/i }).click();
+
+
     await this.page.setInputFiles(fileInputSelector, filePath);
   }
 

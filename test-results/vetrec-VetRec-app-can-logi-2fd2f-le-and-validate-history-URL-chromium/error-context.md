@@ -1,0 +1,223 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - navigation:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - paragraph: Search
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link:
+                                  - /url: "#"
+                                  - img
+                                  - generic: New Visit
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link:
+                                  - /url: /prehistory
+                                  - img
+                                  - generic: Records Recap
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link:
+                                  - /url: "#"
+                                  - img
+                                  - generic: Visits
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link:
+                                  - /url: "#"
+                                  - img
+                                  - generic: Templates
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - link:
+                                  - /url: "#"
+                                  - img
+                                  - generic: Analytics
+                  - generic:
+                    - generic: Config
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - link:
+                                - /url: "#"
+                                - img
+                                - generic: Settings
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - link:
+                                - /url: "#"
+                                - img
+                                - generic: VetRec IQ
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - link:
+                                - /url: "#"
+                                - img
+                                - generic: Help Center
+                - generic:
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: /settings
+                        - generic: Dr. Smith
+          - generic:
+            - generic:
+              - heading [level=1]: Templates
+              - paragraph: Manage your medical record templates
+            - generic:
+              - generic:
+                - img
+                - generic: Search templates...
+              - generic:
+                - generic: All Types
+                - generic: + New Template
+            - generic:
+              - heading [level=2]: My Templates
+              - generic: "Sort by: Recently Modified"
+            - list:
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: SOAP Note
+                    - generic:
+                      - generic: Notes
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Discharge Instructions
+                    - generic:
+                      - generic: Discharge
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Surgery Report
+                    - generic:
+                      - generic: Notes
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Wellness Exam
+                    - generic:
+                      - generic: Notes
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Client Follow-up
+                    - generic:
+                      - generic: Discharge
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Records Summary
+                    - generic:
+                      - generic: Recap
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Dental Procedure
+                    - generic:
+                      - generic: Notes
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Vaccination Record
+                    - generic:
+                      - generic: Notes
+              - listitem:
+                - generic:
+                  - img
+                - generic:
+                  - generic:
+                    - text: Post-Op Instructions
+                    - generic:
+                      - generic: Discharge
+      - img
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - link "VetRec" [ref=e12] [cursor=pointer]:
+            - /url: https://app.vetrec.io/
+            - img "VetRec" [ref=e13]
+          - generic [ref=e14]:
+            - heading "Enter your password" [level=1] [ref=e15]
+            - paragraph [ref=e16]: Enter the password associated with your account
+            - generic [ref=e17]:
+              - paragraph [ref=e18]: cefit.pablo@gmail.com
+              - button "Edit" [ref=e19] [cursor=pointer]:
+                - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e26]:
+              - generic [ref=e27]:
+                - generic [ref=e28]: Password
+                - link "Forgot password?" [ref=e29] [cursor=pointer]:
+                  - /url: ""
+              - generic [ref=e30]:
+                - textbox "Password" [ref=e31]:
+                  - /placeholder: Enter your password
+                  - text: VetRecQA!
+                - button "Show password" [ref=e32] [cursor=pointer]:
+                  - img [ref=e33]
+            - button "Continue" [ref=e37] [cursor=pointer]:
+              - generic [ref=e38]:
+                - text: Continue
+                - img [ref=e39]
+          - link "Use another method" [ref=e42] [cursor=pointer]:
+            - /url: https://app.vetrec.io/CLERK-ROUTER/HASH/factor-one
+      - generic [ref=e47]:
+        - link "Privacy" [ref=e48] [cursor=pointer]:
+          - /url: https://www.vetrec.io/privacy
+        - link "Terms" [ref=e49] [cursor=pointer]:
+          - /url: https://www.vetrec.io/terms-of-service
+  - iframe [ref=e50]:
+    
+```
