@@ -3,221 +3,258 @@
 ```yaml
 - generic [active] [ref=e1]:
   - generic [ref=e3]:
-    - generic [ref=e4]:
-      - generic:
-        - generic:
-          - generic:
-            - generic:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Toggle Sidebar" [ref=e8] [cursor=pointer]:
+          - img
+          - generic [ref=e9]: Toggle Sidebar
+        - button "VetRec Logo" [ref=e10] [cursor=pointer]:
+          - img "VetRec Logo" [ref=e11]
+      - generic [ref=e12]:
+        - listitem [ref=e14]:
+          - button "Search" [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]:
               - img
-            - navigation:
-              - generic:
-                - generic:
-                  - generic:
-                    - generic:
-                      - generic:
-                        - generic:
-                          - generic:
-                            - img
-                            - paragraph: Search
-                      - generic:
-                        - generic:
-                          - generic:
-                            - generic:
-                              - generic:
-                                - link:
-                                  - /url: "#"
-                                  - img
-                                  - generic: New Visit
-                        - generic:
-                          - generic:
-                            - generic:
-                              - generic:
-                                - link:
-                                  - /url: /prehistory
-                                  - img
-                                  - generic: Records Recap
-                        - generic:
-                          - generic:
-                            - generic:
-                              - generic:
-                                - link:
-                                  - /url: "#"
-                                  - img
-                                  - generic: Visits
-                        - generic:
-                          - generic:
-                            - generic:
-                              - generic:
-                                - link:
-                                  - /url: "#"
-                                  - img
-                                  - generic: Templates
-                        - generic:
-                          - generic:
-                            - generic:
-                              - generic:
-                                - link:
-                                  - /url: "#"
-                                  - img
-                                  - generic: Analytics
-                  - generic:
-                    - generic: Config
-                    - generic:
-                      - generic:
-                        - generic:
-                          - generic:
-                            - generic:
-                              - link:
-                                - /url: "#"
-                                - img
-                                - generic: Settings
-                      - generic:
-                        - generic:
-                          - generic:
-                            - generic:
-                              - link:
-                                - /url: "#"
-                                - img
-                                - generic: VetRec IQ
-                      - generic:
-                        - generic:
-                          - generic:
-                            - generic:
-                              - link:
-                                - /url: "#"
-                                - img
-                                - generic: Help Center
-                - generic:
-                  - generic:
-                    - generic:
-                      - link:
-                        - /url: /settings
-                        - generic: Dr. Smith
-          - generic:
-            - generic:
-              - heading [level=1]: Templates
-              - paragraph: Manage your medical record templates
-            - generic:
-              - generic:
+        - generic [ref=e17]:
+          - listitem [ref=e18]:
+            - button "New Visit" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]:
                 - img
-                - generic: Search templates...
-              - generic:
-                - generic: All Types
-                - generic: + New Template
-            - generic:
-              - heading [level=2]: My Templates
-              - generic: "Sort by: Recently Modified"
-            - list:
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: SOAP Note
-                    - generic:
-                      - generic: Notes
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Discharge Instructions
-                    - generic:
-                      - generic: Discharge
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Surgery Report
-                    - generic:
-                      - generic: Notes
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Wellness Exam
-                    - generic:
-                      - generic: Notes
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Client Follow-up
-                    - generic:
-                      - generic: Discharge
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Records Summary
-                    - generic:
-                      - generic: Recap
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Dental Procedure
-                    - generic:
-                      - generic: Notes
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Vaccination Record
-                    - generic:
-                      - generic: Notes
-              - listitem:
-                - generic:
-                  - img
-                - generic:
-                  - generic:
-                    - text: Post-Op Instructions
-                    - generic:
-                      - generic: Discharge
-      - img
-    - generic [ref=e8]:
-      - generic [ref=e9]:
-        - generic [ref=e10]:
-          - link "VetRec" [ref=e12] [cursor=pointer]:
-            - /url: https://app.vetrec.io/
-            - img "VetRec" [ref=e13]
-          - generic [ref=e14]:
-            - heading "Enter your password" [level=1] [ref=e15]
-            - paragraph [ref=e16]: Enter the password associated with your account
-            - generic [ref=e17]:
-              - paragraph [ref=e18]: cefit.pablo@gmail.com
-              - button "Edit" [ref=e19] [cursor=pointer]:
-                - img [ref=e20]
-        - generic [ref=e22]:
-          - generic [ref=e23]:
-            - generic [ref=e26]:
-              - generic [ref=e27]:
-                - generic [ref=e28]: Password
-                - link "Forgot password?" [ref=e29] [cursor=pointer]:
-                  - /url: ""
-              - generic [ref=e30]:
-                - textbox "Password" [ref=e31]:
-                  - /placeholder: Enter your password
-                  - text: VetRecQA!
-                - button "Show password" [ref=e32] [cursor=pointer]:
-                  - img [ref=e33]
-            - button "Continue" [ref=e37] [cursor=pointer]:
-              - generic [ref=e38]:
-                - text: Continue
-                - img [ref=e39]
-          - link "Use another method" [ref=e42] [cursor=pointer]:
-            - /url: https://app.vetrec.io/CLERK-ROUTER/HASH/factor-one
-      - generic [ref=e47]:
-        - link "Privacy" [ref=e48] [cursor=pointer]:
-          - /url: https://www.vetrec.io/privacy
-        - link "Terms" [ref=e49] [cursor=pointer]:
-          - /url: https://www.vetrec.io/terms-of-service
-  - iframe [ref=e50]:
+          - listitem [ref=e21]:
+            - button "Records Recap" [ref=e22] [cursor=pointer]:
+              - generic [ref=e23]:
+                - img
+          - listitem [ref=e24]:
+            - button "Case Board" [ref=e25] [cursor=pointer]:
+              - generic [ref=e26]:
+                - img
+          - listitem [ref=e27]:
+            - button "Visits" [ref=e28] [cursor=pointer]:
+              - generic [ref=e29]:
+                - img
+          - listitem [ref=e31]:
+            - button "Templates" [ref=e32] [cursor=pointer]:
+              - generic [ref=e33]:
+                - img
+        - generic [ref=e34]:
+          - listitem [ref=e35]:
+            - button "Settings" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]:
+                - img
+          - listitem [ref=e38]:
+            - button "VetRec IQ" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]:
+                - img
+          - listitem [ref=e41]:
+            - button "Help Center" [ref=e42] [cursor=pointer]:
+              - generic [ref=e43]:
+                - img
+      - listitem [ref=e45]:
+        - button [ref=e46] [cursor=pointer]:
+          - img [ref=e48]
+    - main [ref=e49]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - button "Create a visit" [ref=e58] [cursor=pointer]:
+              - img [ref=e59]
+              - text: Create a visit
+            - generic [ref=e62]:
+              - button [ref=e63] [cursor=pointer]:
+                - img [ref=e64]
+              - generic [ref=e66]:
+                - generic [ref=e67]: Date
+                - textbox "Date" [ref=e69]:
+                  - /placeholder: All dates
+                  - text: 03/21/2026 - 03/21/2026
+              - button [ref=e70] [cursor=pointer]:
+                - img [ref=e71]
+            - generic [ref=e73]:
+              - generic [ref=e74]: Patient Name
+              - searchbox "Patient Name" [ref=e75]
+          - generic [ref=e76]:
+            - button "All" [ref=e79] [cursor=pointer]:
+              - generic [ref=e80]: All
+              - img [ref=e81]
+            - button "Newest" [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Newest
+              - img [ref=e87]
+            - button "Select" [ref=e89] [cursor=pointer]
+          - generic [ref=e90]:
+            - listitem [ref=e91] [cursor=pointer]:
+              - generic [ref=e92]:
+                - img [ref=e94]
+                - generic [ref=e96]:
+                  - generic [ref=e97]:
+                    - generic [ref=e100]:
+                      - paragraph [ref=e101]: Joy
+                      - paragraph [ref=e102]: 3/21/2026, 12:46 PM
+                    - img [ref=e104]
+                  - generic [ref=e108]: In Progress
+            - listitem [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - generic [ref=e114]:
+                  - generic [ref=e115]:
+                    - generic [ref=e118]:
+                      - paragraph [ref=e119]: Joy
+                      - paragraph [ref=e120]: 3/21/2026, 12:42 PM
+                    - img [ref=e122]
+                  - generic [ref=e126]: In Progress
+            - listitem [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]:
+                - img [ref=e130]
+                - generic [ref=e132]:
+                  - generic [ref=e133]:
+                    - generic [ref=e136]:
+                      - paragraph [ref=e137]: Maple
+                      - paragraph [ref=e138]: 3/21/2026, 12:38 PM
+                    - img [ref=e140]
+                  - generic [ref=e144]: In Progress
+            - listitem [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img [ref=e148]
+                - generic [ref=e150]:
+                  - generic [ref=e151]:
+                    - generic [ref=e154]:
+                      - paragraph [ref=e155]: Maple
+                      - paragraph [ref=e156]: 3/21/2026, 12:38 PM
+                    - img [ref=e158]
+                  - generic [ref=e162]: In Progress
+            - listitem [ref=e163] [cursor=pointer]:
+              - generic [ref=e164]:
+                - img [ref=e166]
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - generic [ref=e172]:
+                      - paragraph [ref=e173]: Maple
+                      - paragraph [ref=e174]: 3/21/2026, 12:35 PM
+                    - img [ref=e176]
+                  - generic [ref=e180]: In Progress
+            - listitem [ref=e181] [cursor=pointer]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - generic [ref=e190]:
+                      - paragraph [ref=e191]: Maple
+                      - paragraph [ref=e192]: 3/21/2026, 12:33 PM
+                    - img [ref=e194]
+                  - generic [ref=e198]: In Progress
+            - listitem [ref=e199] [cursor=pointer]:
+              - generic [ref=e200]:
+                - img [ref=e202]
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - generic [ref=e208]:
+                      - paragraph [ref=e209]: Maple
+                      - paragraph [ref=e210]: 3/21/2026, 12:31 PM
+                    - img [ref=e212]
+                  - generic [ref=e216]: In Progress
+            - listitem [ref=e217] [cursor=pointer]:
+              - generic [ref=e218]:
+                - img [ref=e220]
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - generic [ref=e226]:
+                      - paragraph [ref=e227]: Maple
+                      - paragraph [ref=e228]: 3/21/2026, 11:26 AM
+                    - img [ref=e230]
+                  - generic [ref=e234]: Completed
+            - listitem [ref=e235] [cursor=pointer]:
+              - generic [ref=e236]:
+                - img [ref=e238]
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - generic [ref=e244]:
+                      - paragraph [ref=e245]: Maple
+                      - paragraph [ref=e246]: 3/21/2026, 11:24 AM
+                    - img [ref=e248]
+                  - generic [ref=e252]: In Progress
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - button "Choose visit emoji" [ref=e259] [cursor=pointer]:
+                - generic [ref=e260]: 📄
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]: Joy
+                  - generic [ref=e264] [cursor=pointer]: Edit
+                - generic [ref=e265]:
+                  - generic [ref=e266]: 3/21/2026, 12:46 PM
+                  - generic [ref=e267] [cursor=pointer]: Edit
+            - generic [ref=e269]:
+              - generic [ref=e271]:
+                - generic [ref=e272]: Status
+                - button "In Progress" [ref=e274] [cursor=pointer]:
+                  - generic [ref=e275]: In Progress
+                  - img [ref=e276]
+              - generic [ref=e278]:
+                - button "Add to visit" [ref=e281] [cursor=pointer]:
+                  - img [ref=e283]
+                  - generic [ref=e285]: Add to visit
+                - button "Phone" [ref=e288] [cursor=pointer]:
+                  - generic [ref=e289]:
+                    - img [ref=e290]
+                    - generic [ref=e292]: Phone
+                - button "D.A.V.I.D" [ref=e295] [cursor=pointer]:
+                  - img [ref=e296]
+                  - generic [ref=e298]: D.A.V.I.D
+                - button "Send email" [ref=e301] [cursor=pointer]:
+                  - generic [ref=e302]:
+                    - img [ref=e303]
+                    - generic [ref=e305]: Email
+                - button [ref=e308] [cursor=pointer]:
+                  - img [ref=e309]
+          - navigation "Tabs" [ref=e312]:
+            - generic [ref=e313] [cursor=pointer]:
+              - img [ref=e315]
+              - generic [ref=e320]: Overview
+            - generic [ref=e321] [cursor=pointer]:
+              - img [ref=e323]
+              - generic [ref=e325]: Records Recap
+            - generic [ref=e326] [cursor=pointer]:
+              - img [ref=e327]
+              - generic [ref=e330]: Notes
+            - generic [ref=e331] [cursor=pointer]:
+              - img [ref=e333]
+              - generic [ref=e336]: Discharges
+            - generic [ref=e337] [cursor=pointer]:
+              - img [ref=e339]
+              - generic [ref=e344]: Transcript
+          - generic [ref=e345]:
+            - generic [ref=e347]:
+              - generic [ref=e350]:
+                - navigation "Document tabs" [ref=e353]:
+                  - button "Acupuncture SOAP Mar 21, 2026, 12:46 PM" [ref=e354] [cursor=pointer]:
+                    - generic [ref=e356]:
+                      - img [ref=e358]
+                      - generic [ref=e361]:
+                        - generic [ref=e363]: Acupuncture SOAP
+                        - generic [ref=e364]: Mar 21, 2026, 12:46 PM
+                - button "Add new note" [disabled] [ref=e368]:
+                  - img [ref=e369]
+                  - generic [ref=e371]: New note
+              - generic [ref=e375]:
+                - generic [ref=e376]: Generating notes....
+                - img [ref=e377]
+                - generic [ref=e380]:
+                  - text: Notes will be ready within 60s.
+                  - text: Feel free to navigate away if you need to.
+              - generic [ref=e382]:
+                - 'link "Template: Acupuncture SOAP" [ref=e384] [cursor=pointer]':
+                  - /url: templateBuilder?templateId=acupuncture_soap&reprocess_session=true&session_id=4c45f248-f57f-452d-9c8c-bf0d68474407&node_id=4d0f278b-769e-4bce-8e99-2ab7aa16ef23
+                  - generic [ref=e385]: "Template: Acupuncture SOAP"
+                  - img [ref=e386]
+                - generic [ref=e389]: "Last Modified On: 3/21/26 12:47:24 PM"
+            - generic [ref=e390]: "Visit ID: 4c45f248-f57f-452d-9c8c-bf0d68474407"
+  - iframe [ref=e391]:
     
+  - iframe [ref=e393]:
+    - generic [active] [ref=f12e1]:
+      - generic "Intercom":
+        - region "Intercom messenger":
+          - button "Open Intercom Messenger" [ref=f12e2] [cursor=pointer]:
+            - img [ref=f12e4]
+            - img [ref=f12e7]
 ```

@@ -1,11 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { VetRecPage } from './helpers/vetrecPage';
 
-const USERNAME = process.env.VETREC_USER ?? 'your_username';
-const PASSWORD = process.env.VETREC_PASS ?? 'your_password';
+const USERNAME = 'cefit.pablo@gmail.com'
+//process.env.VETREC_USER ?? 'your_username';
+const PASSWORD = 'VetRecQA!'
+//process.env.VETREC_PASS ?? 'your_password';
 
 // Path to a .webm file used for upload. Replace with a real file for real tests.
-const SAMPLE_WEBM = 'tests/fixtures/sample.webm';
+const SAMPLE_WEBM = 'tests\\fixtures\\InputSound.webm'
+
 
 test.describe('VetRec app', () => {
   test('can login, grant microphone, upload file, and validate history URL', async ({ page }) => {
@@ -14,26 +17,32 @@ test.describe('VetRec app', () => {
     await vetRec.goto();
 
     // Login flow (update selectors as needed)
-    await vetRec.login(USERNAME, PASSWORD);
+    await vetRec.login(USERNAME, PASSWORD); 
 
     // Grant microphone permission for this test run.
     // This is usually needed when the app prompts for microphone access.
     await vetRec.grantMicrophonePermission();
 
-    // Example: upload a webm file.
-    await vetRec.uploadWebmFile('input[type="file"]', SAMPLE_WEBM);
-
-    // Example: choose option from a list.
-    await vetRec.chooseOptionFromList('css=select', 'Option 1');
-
-    // Example: click a button.
-    await vetRec.clickButton('button:has-text("Continue")');
-
-    // Example: read some text from the page.
-    const bannerText = await vetRec.getText('h1');
-    console.log('Page banner text:', bannerText);
+    // Upload a webm file.
+    const nameOfPet = 'Joy';
+    await vetRec.uploadWebmFile('#dropzone-file', SAMPLE_WEBM, nameOfPet);
 
     // Assertion that the URL includes the session history path.
     await expect(page).toHaveURL(/\/history\?session_id=/);
+
+    // Assertion that the date is correctly and status IN PROGRESS
+    const statusElement = page.getByText('In Progress').toString();
+    const dateElement = 'p.text-xs.whitespace-nowrap.text-gray-600';
+    const isValid = await vetRec.validateDate(dateElement);
+    expect(isValid).toBe(true);
+    expect(statusElement).toEqual('IN PROGRESS');
+
+
+    //Move to Transcipt
+    const  selectorToList = '//*[@id="headlessui-listbox-button-:r2b:"]';
+    const StatusCompleted = page.getByText('Completed').toString();
+    await vetRec.switchToTranscript(selectorToList);
+    expect(StatusCompleted).toEqual('COMPLETED');
+
   });
 });

@@ -21,9 +21,9 @@ export class VetRecPage {
    */
   async login(username: string, password: string) {
     
-    await this.page.getByPlaceholder('Enter your email address').fill('cefit.pablo@gmail.com');
+    await this.page.getByPlaceholder('Enter your email address').fill(username);
     await this.page.getByRole('button', { name: /continue/i }).click();
-    await this.page.getByPlaceholder('Enter your password').fill('VetRecQA!');
+    await this.page.getByPlaceholder('Enter your password').fill(password);
     await this.page.getByRole('button', { name: /continue/i }).click();
 
 
@@ -37,23 +37,22 @@ export class VetRecPage {
   /**
    * Grant microphone permission for the current context.
    */
-  /**async grantMicrophonePermission() {
+  async grantMicrophonePermission() {
      debugger;
     await this.page.context().grantPermissions(['microphone'], { origin: this.page.url() });
   }
-    */
+    
 
   /**
    * Upload a .webm file using an <input type="file"> element.
    */
-  async uploadWebmFile(fileInputSelector: string, filePath: string) {
-
+  async uploadWebmFile(fileInputSelector: string, filePath: string, namePet: string) {
+    await this.page.getByPlaceholder('Mr. Wiggles (optional)').fill(namePet);
     await this.page.getByRole('tab', { name: 'Upload' }).click();
-    await this.page.setInputFiles('#dropzone-file', 'tests\fixtures\InputSound.webm');
-    await this.page.getByRole('button', { name: /Upload/i }).click();
-
-
     await this.page.setInputFiles(fileInputSelector, filePath);
+    await this.page.getByRole('button', { name: /Upload/i }).click();
+    await this.page.getByRole('button', { name: /Process/i }).click();
+
   }
 
   /**
@@ -75,9 +74,33 @@ export class VetRecPage {
   }
 
   /**
+   * Get date of Mapple and validate.
+   */
+  async validateDate(DateOfName: string): Promise<boolean> {
+
+    const dateElement = this.page.locator(DateOfName);
+    const DateText = await dateElement.textContent();
+    const DateGet = DateText?.split(',')[0];
+    const today = new Date();
+    const DateToday = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+    
+    return DateGet === DateToday;
+}
+   /**
    * Get visible text from a selector.
    */
   async getText(selector: string) {
     return await this.page.textContent(selector);
+  }
+
+  /**
+   * Upload a .webm file using an <input type="file"> element.
+   */
+  async switchToTranscript(Selector: string) {
+
+    await this.page.getByRole('tab', { name: 'Transcript' }).click();
+    await this.chooseOptionFromList(Selector, 'Completed');
+   
+
   }
 }
