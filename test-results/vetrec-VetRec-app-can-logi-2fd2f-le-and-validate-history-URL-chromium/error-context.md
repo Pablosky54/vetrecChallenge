@@ -1,256 +1,473 @@
 # Page snapshot
 
 ```yaml
-- generic [active] [ref=e1]:
-  - generic [ref=e3]:
+- generic [ref=e1]:
+  - generic [ref=e3] [cursor=pointer]:
     - generic [ref=e6]:
       - generic [ref=e7]:
-        - button "Toggle Sidebar" [ref=e8] [cursor=pointer]:
+        - button "Toggle Sidebar" [ref=e8]:
           - img
           - generic [ref=e9]: Toggle Sidebar
-        - button "VetRec Logo" [ref=e10] [cursor=pointer]:
+        - button "VetRec Logo" [ref=e10]:
           - img "VetRec Logo" [ref=e11]
       - generic [ref=e12]:
         - listitem [ref=e14]:
-          - button "Search" [ref=e15] [cursor=pointer]:
+          - button "Search" [ref=e15]:
             - generic [ref=e16]:
               - img
         - generic [ref=e17]:
           - listitem [ref=e18]:
-            - button "New Visit" [ref=e19] [cursor=pointer]:
+            - button "New Visit" [ref=e19]:
               - generic [ref=e20]:
                 - img
           - listitem [ref=e21]:
-            - button "Records Recap" [ref=e22] [cursor=pointer]:
+            - button "Records Recap" [ref=e22]:
               - generic [ref=e23]:
                 - img
           - listitem [ref=e24]:
-            - button "Case Board" [ref=e25] [cursor=pointer]:
+            - button "Case Board" [ref=e25]:
               - generic [ref=e26]:
                 - img
           - listitem [ref=e27]:
-            - button "Visits" [ref=e28] [cursor=pointer]:
+            - button "Visits" [ref=e28]:
               - generic [ref=e29]:
                 - img
           - listitem [ref=e31]:
-            - button "Templates" [ref=e32] [cursor=pointer]:
+            - button "Templates" [ref=e32]:
               - generic [ref=e33]:
                 - img
         - generic [ref=e34]:
           - listitem [ref=e35]:
-            - button "Settings" [ref=e36] [cursor=pointer]:
+            - button "Settings" [ref=e36]:
               - generic [ref=e37]:
                 - img
           - listitem [ref=e38]:
-            - button "VetRec IQ" [ref=e39] [cursor=pointer]:
+            - button "VetRec IQ" [ref=e39]:
               - generic [ref=e40]:
                 - img
           - listitem [ref=e41]:
-            - button "Help Center" [ref=e42] [cursor=pointer]:
+            - button "Help Center" [ref=e42]:
               - generic [ref=e43]:
                 - img
       - listitem [ref=e45]:
-        - button [ref=e46] [cursor=pointer]:
+        - button [ref=e46]:
           - img [ref=e48]
     - main [ref=e49]:
-      - generic [ref=e51]:
-        - generic [ref=e52]:
-          - generic [ref=e53]:
-            - button "Create a visit" [ref=e58] [cursor=pointer]:
-              - img [ref=e59]
-              - text: Create a visit
-            - generic [ref=e62]:
-              - button [ref=e63] [cursor=pointer]:
-                - img [ref=e64]
-              - generic [ref=e66]:
-                - generic [ref=e67]: Date
-                - textbox "Date" [ref=e69]:
-                  - /placeholder: All dates
-                  - text: 03/21/2026 - 03/21/2026
-              - button [ref=e70] [cursor=pointer]:
-                - img [ref=e71]
-            - generic [ref=e73]:
-              - generic [ref=e74]: Patient Name
-              - searchbox "Patient Name" [ref=e75]
-          - generic [ref=e76]:
-            - button "All" [ref=e79] [cursor=pointer]:
-              - generic [ref=e80]: All
-              - img [ref=e81]
-            - button "Newest" [ref=e85] [cursor=pointer]:
-              - generic [ref=e86]: Newest
-              - img [ref=e87]
-            - button "Select" [ref=e89] [cursor=pointer]
-          - generic [ref=e90]:
-            - listitem [ref=e91] [cursor=pointer]:
-              - generic [ref=e92]:
-                - img [ref=e94]
-                - generic [ref=e96]:
-                  - generic [ref=e97]:
-                    - generic [ref=e100]:
-                      - paragraph [ref=e101]: Joy
-                      - paragraph [ref=e102]: 3/21/2026, 12:46 PM
-                    - img [ref=e104]
-                  - generic [ref=e108]: In Progress
-            - listitem [ref=e109] [cursor=pointer]:
-              - generic [ref=e110]:
-                - img [ref=e112]
-                - generic [ref=e114]:
-                  - generic [ref=e115]:
-                    - generic [ref=e118]:
-                      - paragraph [ref=e119]: Joy
-                      - paragraph [ref=e120]: 3/21/2026, 12:42 PM
-                    - img [ref=e122]
-                  - generic [ref=e126]: In Progress
-            - listitem [ref=e127] [cursor=pointer]:
-              - generic [ref=e128]:
-                - img [ref=e130]
-                - generic [ref=e132]:
-                  - generic [ref=e133]:
-                    - generic [ref=e136]:
-                      - paragraph [ref=e137]: Maple
-                      - paragraph [ref=e138]: 3/21/2026, 12:38 PM
-                    - img [ref=e140]
-                  - generic [ref=e144]: In Progress
-            - listitem [ref=e145] [cursor=pointer]:
-              - generic [ref=e146]:
-                - img [ref=e148]
-                - generic [ref=e150]:
-                  - generic [ref=e151]:
-                    - generic [ref=e154]:
-                      - paragraph [ref=e155]: Maple
-                      - paragraph [ref=e156]: 3/21/2026, 12:38 PM
-                    - img [ref=e158]
-                  - generic [ref=e162]: In Progress
-            - listitem [ref=e163] [cursor=pointer]:
-              - generic [ref=e164]:
-                - img [ref=e166]
-                - generic [ref=e168]:
-                  - generic [ref=e169]:
-                    - generic [ref=e172]:
-                      - paragraph [ref=e173]: Maple
-                      - paragraph [ref=e174]: 3/21/2026, 12:35 PM
-                    - img [ref=e176]
-                  - generic [ref=e180]: In Progress
-            - listitem [ref=e181] [cursor=pointer]:
-              - generic [ref=e182]:
-                - img [ref=e184]
-                - generic [ref=e186]:
-                  - generic [ref=e187]:
-                    - generic [ref=e190]:
-                      - paragraph [ref=e191]: Maple
-                      - paragraph [ref=e192]: 3/21/2026, 12:33 PM
-                    - img [ref=e194]
-                  - generic [ref=e198]: In Progress
-            - listitem [ref=e199] [cursor=pointer]:
-              - generic [ref=e200]:
-                - img [ref=e202]
-                - generic [ref=e204]:
-                  - generic [ref=e205]:
-                    - generic [ref=e208]:
-                      - paragraph [ref=e209]: Maple
-                      - paragraph [ref=e210]: 3/21/2026, 12:31 PM
-                    - img [ref=e212]
-                  - generic [ref=e216]: In Progress
-            - listitem [ref=e217] [cursor=pointer]:
-              - generic [ref=e218]:
-                - img [ref=e220]
-                - generic [ref=e222]:
-                  - generic [ref=e223]:
-                    - generic [ref=e226]:
-                      - paragraph [ref=e227]: Maple
-                      - paragraph [ref=e228]: 3/21/2026, 11:26 AM
-                    - img [ref=e230]
-                  - generic [ref=e234]: Completed
-            - listitem [ref=e235] [cursor=pointer]:
-              - generic [ref=e236]:
-                - img [ref=e238]
-                - generic [ref=e240]:
-                  - generic [ref=e241]:
-                    - generic [ref=e244]:
-                      - paragraph [ref=e245]: Maple
-                      - paragraph [ref=e246]: 3/21/2026, 11:24 AM
-                    - img [ref=e248]
-                  - generic [ref=e252]: In Progress
-        - generic [ref=e254]:
-          - generic [ref=e255]:
-            - generic [ref=e256]:
-              - button "Choose visit emoji" [ref=e259] [cursor=pointer]:
-                - generic [ref=e260]: 📄
-              - generic [ref=e261]:
-                - generic [ref=e262]:
-                  - generic [ref=e263]: Joy
-                  - generic [ref=e264] [cursor=pointer]: Edit
-                - generic [ref=e265]:
-                  - generic [ref=e266]: 3/21/2026, 12:46 PM
-                  - generic [ref=e267] [cursor=pointer]: Edit
-            - generic [ref=e269]:
-              - generic [ref=e271]:
-                - generic [ref=e272]: Status
-                - button "In Progress" [ref=e274] [cursor=pointer]:
-                  - generic [ref=e275]: In Progress
-                  - img [ref=e276]
-              - generic [ref=e278]:
-                - button "Add to visit" [ref=e281] [cursor=pointer]:
-                  - img [ref=e283]
-                  - generic [ref=e285]: Add to visit
-                - button "Phone" [ref=e288] [cursor=pointer]:
-                  - generic [ref=e289]:
-                    - img [ref=e290]
-                    - generic [ref=e292]: Phone
-                - button "D.A.V.I.D" [ref=e295] [cursor=pointer]:
-                  - img [ref=e296]
-                  - generic [ref=e298]: D.A.V.I.D
-                - button "Send email" [ref=e301] [cursor=pointer]:
-                  - generic [ref=e302]:
-                    - img [ref=e303]
-                    - generic [ref=e305]: Email
-                - button [ref=e308] [cursor=pointer]:
-                  - img [ref=e309]
-          - navigation "Tabs" [ref=e312]:
-            - generic [ref=e313] [cursor=pointer]:
-              - img [ref=e315]
-              - generic [ref=e320]: Overview
-            - generic [ref=e321] [cursor=pointer]:
-              - img [ref=e323]
-              - generic [ref=e325]: Records Recap
-            - generic [ref=e326] [cursor=pointer]:
-              - img [ref=e327]
-              - generic [ref=e330]: Notes
-            - generic [ref=e331] [cursor=pointer]:
-              - img [ref=e333]
-              - generic [ref=e336]: Discharges
-            - generic [ref=e337] [cursor=pointer]:
-              - img [ref=e339]
-              - generic [ref=e344]: Transcript
-          - generic [ref=e345]:
-            - generic [ref=e347]:
-              - generic [ref=e350]:
-                - navigation "Document tabs" [ref=e353]:
-                  - button "Acupuncture SOAP Mar 21, 2026, 12:46 PM" [ref=e354] [cursor=pointer]:
-                    - generic [ref=e356]:
-                      - img [ref=e358]
-                      - generic [ref=e361]:
-                        - generic [ref=e363]: Acupuncture SOAP
-                        - generic [ref=e364]: Mar 21, 2026, 12:46 PM
-                - button "Add new note" [disabled] [ref=e368]:
-                  - img [ref=e369]
-                  - generic [ref=e371]: New note
-              - generic [ref=e375]:
-                - generic [ref=e376]: Generating notes....
-                - img [ref=e377]
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - button "Create a visit" [ref=e58]:
+                - img [ref=e59]
+                - text: Create a visit
+              - generic [ref=e62]:
+                - button [ref=e63]:
+                  - img [ref=e64]
+                - generic [ref=e66]:
+                  - generic [ref=e67]: Date
+                  - textbox "Date" [ref=e69]:
+                    - /placeholder: All dates
+                    - text: 03/21/2026 - 03/21/2026
+                - button [ref=e70]:
+                  - img [ref=e71]
+              - generic [ref=e73]:
+                - generic [ref=e74]: Patient Name
+                - searchbox "Patient Name" [ref=e75]
+            - generic [ref=e76]:
+              - button "All" [ref=e79]:
+                - generic [ref=e80]: All
+                - img [ref=e81]
+              - button "Newest" [ref=e85]:
+                - generic [ref=e86]: Newest
+                - img [ref=e87]
+              - button "Select" [ref=e89]
+            - generic [ref=e90]:
+              - listitem [ref=e91]:
+                - generic [ref=e92]:
+                  - img [ref=e94]
+                  - generic [ref=e96]:
+                    - generic [ref=e97]:
+                      - generic [ref=e100]:
+                        - paragraph [ref=e101]: Joy
+                        - paragraph [ref=e102]: 3/21/2026, 09:12 PM
+                      - img [ref=e104]
+                    - generic [ref=e108]: In Progress
+              - listitem [ref=e109]:
+                - generic [ref=e110]:
+                  - img [ref=e112]
+                  - generic [ref=e114]:
+                    - generic [ref=e115]:
+                      - generic [ref=e118]:
+                        - paragraph [ref=e119]: Joy
+                        - paragraph [ref=e120]: 3/21/2026, 09:05 PM
+                      - img [ref=e122]
+                    - generic [ref=e126]: Completed
+              - listitem [ref=e127]:
+                - generic [ref=e128]:
+                  - img [ref=e130]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - generic [ref=e136]:
+                        - paragraph [ref=e137]: Joy
+                        - paragraph [ref=e138]: 3/21/2026, 09:04 PM
+                      - img [ref=e140]
+                    - generic [ref=e144]: Completed
+              - listitem [ref=e145]:
+                - generic [ref=e146]:
+                  - img [ref=e148]
+                  - generic [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic [ref=e154]:
+                        - paragraph [ref=e155]: Joy
+                        - paragraph [ref=e156]: 3/21/2026, 09:01 PM
+                      - img [ref=e158]
+                    - generic [ref=e162]: Completed
+              - listitem [ref=e163]:
+                - generic [ref=e164]:
+                  - img [ref=e166]
+                  - generic [ref=e168]:
+                    - generic [ref=e169]:
+                      - generic [ref=e172]:
+                        - paragraph [ref=e173]: Joy
+                        - paragraph [ref=e174]: 3/21/2026, 09:00 PM
+                      - img [ref=e176]
+                    - generic [ref=e180]: Completed
+              - listitem [ref=e181]:
+                - generic [ref=e182]:
+                  - img [ref=e184]
+                  - generic [ref=e186]:
+                    - generic [ref=e187]:
+                      - generic [ref=e190]:
+                        - paragraph [ref=e191]: Joy
+                        - paragraph [ref=e192]: 3/21/2026, 08:57 PM
+                      - img [ref=e194]
+                    - generic [ref=e198]: Completed
+              - listitem [ref=e199]:
+                - generic [ref=e200]:
+                  - img [ref=e202]
+                  - generic [ref=e204]:
+                    - generic [ref=e205]:
+                      - generic [ref=e208]:
+                        - paragraph [ref=e209]: Joy
+                        - paragraph [ref=e210]: 3/21/2026, 08:54 PM
+                      - img [ref=e212]
+                    - generic [ref=e216]: In Progress
+              - listitem [ref=e217]:
+                - generic [ref=e218]:
+                  - img [ref=e220]
+                  - generic [ref=e222]:
+                    - generic [ref=e223]:
+                      - generic [ref=e226]:
+                        - paragraph [ref=e227]: Joy
+                        - paragraph [ref=e228]: 3/21/2026, 08:51 PM
+                      - img [ref=e230]
+                    - generic [ref=e234]: Completed
+              - listitem [ref=e235]:
+                - generic [ref=e236]:
+                  - img [ref=e238]
+                  - generic [ref=e240]:
+                    - generic [ref=e241]:
+                      - generic [ref=e244]:
+                        - paragraph [ref=e245]: Joy
+                        - paragraph [ref=e246]: 3/21/2026, 08:48 PM
+                      - img [ref=e248]
+                    - generic [ref=e252]: In Progress
+              - listitem [ref=e253]:
+                - generic [ref=e254]:
+                  - img [ref=e256]
+                  - generic [ref=e258]:
+                    - generic [ref=e259]:
+                      - generic [ref=e262]:
+                        - paragraph [ref=e263]: Joy
+                        - paragraph [ref=e264]: 3/21/2026, 08:45 PM
+                      - img [ref=e266]
+                    - generic [ref=e270]: In Progress
+              - listitem [ref=e271]:
+                - generic [ref=e272]:
+                  - img [ref=e274]
+                  - generic [ref=e276]:
+                    - generic [ref=e277]:
+                      - generic [ref=e280]:
+                        - paragraph [ref=e281]: Joy
+                        - paragraph [ref=e282]: 3/21/2026, 08:42 PM
+                      - img [ref=e284]
+                    - generic [ref=e288]: In Progress
+              - listitem [ref=e289]:
+                - generic [ref=e290]:
+                  - img [ref=e292]
+                  - generic [ref=e294]:
+                    - generic [ref=e295]:
+                      - generic [ref=e298]:
+                        - paragraph [ref=e299]: Joy
+                        - paragraph [ref=e300]: 3/21/2026, 08:27 PM
+                      - img [ref=e302]
+                    - generic [ref=e306]: In Progress
+              - listitem [ref=e307]:
+                - generic [ref=e308]:
+                  - img [ref=e310]
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e316]:
+                        - paragraph [ref=e317]: Joy
+                        - paragraph [ref=e318]: 3/21/2026, 08:25 PM
+                      - img [ref=e320]
+                    - generic [ref=e324]: In Progress
+              - listitem [ref=e325]:
+                - generic [ref=e326]:
+                  - img [ref=e328]
+                  - generic [ref=e330]:
+                    - generic [ref=e331]:
+                      - generic [ref=e334]:
+                        - paragraph [ref=e335]: Joy
+                        - paragraph [ref=e336]: 3/21/2026, 08:21 PM
+                      - img [ref=e338]
+                    - generic [ref=e342]: In Progress
+              - listitem [ref=e343]:
+                - generic [ref=e344]:
+                  - img [ref=e346]
+                  - generic [ref=e348]:
+                    - generic [ref=e349]:
+                      - generic [ref=e352]:
+                        - paragraph [ref=e353]: Joy
+                        - paragraph [ref=e354]: 3/21/2026, 01:43 PM
+                      - img [ref=e356]
+                    - generic [ref=e360]: In Progress
+              - listitem [ref=e361]:
+                - generic [ref=e362]:
+                  - img [ref=e364]
+                  - generic [ref=e366]:
+                    - generic [ref=e367]:
+                      - generic [ref=e370]:
+                        - paragraph [ref=e371]: Joy
+                        - paragraph [ref=e372]: 3/21/2026, 01:39 PM
+                      - img [ref=e374]
+                    - generic [ref=e378]: In Progress
+              - listitem [ref=e379]:
                 - generic [ref=e380]:
-                  - text: Notes will be ready within 60s.
-                  - text: Feel free to navigate away if you need to.
-              - generic [ref=e382]:
-                - 'link "Template: Acupuncture SOAP" [ref=e384] [cursor=pointer]':
-                  - /url: templateBuilder?templateId=acupuncture_soap&reprocess_session=true&session_id=4c45f248-f57f-452d-9c8c-bf0d68474407&node_id=4d0f278b-769e-4bce-8e99-2ab7aa16ef23
-                  - generic [ref=e385]: "Template: Acupuncture SOAP"
-                  - img [ref=e386]
-                - generic [ref=e389]: "Last Modified On: 3/21/26 12:47:24 PM"
-            - generic [ref=e390]: "Visit ID: 4c45f248-f57f-452d-9c8c-bf0d68474407"
-  - iframe [ref=e391]:
+                  - img [ref=e382]
+                  - generic [ref=e384]:
+                    - generic [ref=e385]:
+                      - generic [ref=e388]:
+                        - paragraph [ref=e389]: Joy
+                        - paragraph [ref=e390]: 3/21/2026, 01:38 PM
+                      - img [ref=e392]
+                    - generic [ref=e396]: In Progress
+              - listitem [ref=e397]:
+                - generic [ref=e398]:
+                  - img [ref=e400]
+                  - generic [ref=e402]:
+                    - generic [ref=e403]:
+                      - generic [ref=e406]:
+                        - paragraph [ref=e407]: Joy
+                        - paragraph [ref=e408]: 3/21/2026, 01:35 PM
+                      - img [ref=e410]
+                    - generic [ref=e414]: In Progress
+              - listitem [ref=e415]:
+                - generic [ref=e416]:
+                  - img [ref=e418]
+                  - generic [ref=e420]:
+                    - generic [ref=e421]:
+                      - generic [ref=e424]:
+                        - paragraph [ref=e425]: Joy
+                        - paragraph [ref=e426]: 3/21/2026, 01:32 PM
+                      - img [ref=e428]
+                    - generic [ref=e432]: In Progress
+              - listitem [ref=e433]:
+                - generic [ref=e434]:
+                  - img [ref=e436]
+                  - generic [ref=e438]:
+                    - generic [ref=e439]:
+                      - generic [ref=e442]:
+                        - paragraph [ref=e443]: Joy
+                        - paragraph [ref=e444]: 3/21/2026, 01:26 PM
+                      - img [ref=e446]
+                    - generic [ref=e450]: In Progress
+              - listitem [ref=e451]:
+                - generic [ref=e452]:
+                  - img [ref=e454]
+                  - generic [ref=e456]:
+                    - generic [ref=e457]:
+                      - generic [ref=e460]:
+                        - paragraph [ref=e461]: Joy
+                        - paragraph [ref=e462]: 3/21/2026, 01:22 PM
+                      - img [ref=e464]
+                    - generic [ref=e468]: In Progress
+              - listitem [ref=e469]:
+                - generic [ref=e470]:
+                  - img [ref=e472]
+                  - generic [ref=e474]:
+                    - generic [ref=e475]:
+                      - generic [ref=e478]:
+                        - paragraph [ref=e479]: Joy
+                        - paragraph [ref=e480]: 3/21/2026, 12:46 PM
+                      - img [ref=e482]
+                    - generic [ref=e486]: In Progress
+              - listitem [ref=e487]:
+                - generic [ref=e488]:
+                  - img [ref=e490]
+                  - generic [ref=e492]:
+                    - generic [ref=e493]:
+                      - generic [ref=e496]:
+                        - paragraph [ref=e497]: Joy
+                        - paragraph [ref=e498]: 3/21/2026, 12:42 PM
+                      - img [ref=e500]
+                    - generic [ref=e504]: In Progress
+              - listitem [ref=e505]:
+                - generic [ref=e506]:
+                  - img [ref=e508]
+                  - generic [ref=e510]:
+                    - generic [ref=e511]:
+                      - generic [ref=e514]:
+                        - paragraph [ref=e515]: Maple
+                        - paragraph [ref=e516]: 3/21/2026, 12:38 PM
+                      - img [ref=e518]
+                    - generic [ref=e522]: In Progress
+              - listitem [ref=e523]:
+                - generic [ref=e524]:
+                  - img [ref=e526]
+                  - generic [ref=e528]:
+                    - generic [ref=e529]:
+                      - generic [ref=e532]:
+                        - paragraph [ref=e533]: Maple
+                        - paragraph [ref=e534]: 3/21/2026, 12:38 PM
+                      - img [ref=e536]
+                    - generic [ref=e540]: In Progress
+              - listitem [ref=e541]:
+                - generic [ref=e542]:
+                  - img [ref=e544]
+                  - generic [ref=e546]:
+                    - generic [ref=e547]:
+                      - generic [ref=e550]:
+                        - paragraph [ref=e551]: Maple
+                        - paragraph [ref=e552]: 3/21/2026, 12:35 PM
+                      - img [ref=e554]
+                    - generic [ref=e558]: In Progress
+              - listitem [ref=e559]:
+                - generic [ref=e560]:
+                  - img [ref=e562]
+                  - generic [ref=e564]:
+                    - generic [ref=e565]:
+                      - generic [ref=e568]:
+                        - paragraph [ref=e569]: Maple
+                        - paragraph [ref=e570]: 3/21/2026, 12:33 PM
+                      - img [ref=e572]
+                    - generic [ref=e576]: In Progress
+              - listitem [ref=e577]:
+                - generic [ref=e578]:
+                  - img [ref=e580]
+                  - generic [ref=e582]:
+                    - generic [ref=e583]:
+                      - generic [ref=e586]:
+                        - paragraph [ref=e587]: Maple
+                        - paragraph [ref=e588]: 3/21/2026, 12:31 PM
+                      - img [ref=e590]
+                    - generic [ref=e594]: In Progress
+              - listitem [ref=e595]:
+                - generic [ref=e596]:
+                  - img [ref=e598]
+                  - generic [ref=e600]:
+                    - generic [ref=e601]:
+                      - generic [ref=e604]:
+                        - paragraph [ref=e605]: Maple
+                        - paragraph [ref=e606]: 3/21/2026, 11:26 AM
+                      - img [ref=e608]
+                    - generic [ref=e612]: Completed
+              - listitem [ref=e613]:
+                - generic [ref=e614]:
+                  - img [ref=e616]
+                  - generic [ref=e618]:
+                    - generic [ref=e619]:
+                      - generic [ref=e622]:
+                        - paragraph [ref=e623]: Maple
+                        - paragraph [ref=e624]: 3/21/2026, 11:24 AM
+                      - img [ref=e626]
+                    - generic [ref=e630]: In Progress
+          - generic [ref=e632]:
+            - generic [ref=e633]:
+              - generic [ref=e634]:
+                - button "Choose visit emoji" [ref=e637]:
+                  - generic [ref=e638]: 📄
+                - generic [ref=e639]:
+                  - generic [ref=e640]:
+                    - generic [ref=e641]: Joy
+                    - generic [ref=e642]: Edit
+                  - generic [ref=e643]:
+                    - generic [ref=e644]: 3/21/2026, 09:12 PM
+                    - generic [ref=e645]: Edit
+              - generic [ref=e647]:
+                - generic [ref=e649]:
+                  - generic [ref=e650]: Status
+                  - button "Completed" [active] [ref=e652]:
+                    - generic [ref=e653]: Completed
+                    - img [ref=e654]
+                - generic [ref=e656]:
+                  - button "Add to visit" [disabled] [ref=e659]:
+                    - img [ref=e661]
+                    - generic [ref=e663]: Add to visit
+                  - button "Phone" [disabled] [ref=e666]:
+                    - generic [ref=e667]:
+                      - img [ref=e668]
+                      - generic [ref=e670]: Phone
+                  - button "D.A.V.I.D" [ref=e673]:
+                    - img [ref=e674]
+                    - generic [ref=e676]: D.A.V.I.D
+                  - button "Send email" [ref=e679]:
+                    - generic [ref=e680]:
+                      - img [ref=e681]
+                      - generic [ref=e683]: Email
+                  - button [ref=e686]:
+                    - img [ref=e687]
+            - navigation "Tabs" [ref=e690]:
+              - generic [ref=e691]:
+                - img [ref=e693]
+                - generic [ref=e698]: Overview
+              - generic [ref=e699]:
+                - img [ref=e701]
+                - generic [ref=e703]: Records Recap
+              - generic [ref=e704]:
+                - img [ref=e705]
+                - generic [ref=e708]: Notes
+              - generic [ref=e709]:
+                - img [ref=e711]
+                - generic [ref=e714]: Discharges
+              - generic [ref=e715]:
+                - img [ref=e716]
+                - generic [ref=e719]: Transcript
+            - generic [ref=e720]:
+              - generic [ref=e722]:
+                - generic [ref=e725]:
+                  - navigation "Document tabs" [ref=e728]:
+                    - button "Phone Call - Summary Mar 21, 2026, 09:12 PM" [ref=e729]:
+                      - generic [ref=e731]:
+                        - img [ref=e733]
+                        - generic [ref=e736]:
+                          - generic [ref=e738]: Phone Call - Summary
+                          - generic [ref=e739]: Mar 21, 2026, 09:12 PM
+                  - button "Add new note" [disabled] [ref=e743]:
+                    - img [ref=e744]
+                    - generic [ref=e746]: New note
+                - generic [ref=e750]:
+                  - generic [ref=e751]: Transcribing recording...
+                  - img [ref=e752]
+                  - generic [ref=e755]: Transcript will be ready shortly.
+                - generic [ref=e757]:
+                  - 'link "Template: Phone Call - Summary" [ref=e759]':
+                    - /url: templateBuilder?templateId=phone_summary&reprocess_session=true&session_id=4a656646-0d5c-43b4-ac51-fe804cd6758e&node_id=021d5574-3b55-4a36-b8f7-f940286b2c50
+                    - generic [ref=e760]: "Template: Phone Call - Summary"
+                    - img [ref=e761]
+                  - generic [ref=e764]: "Last Modified On: 3/21/26 9:12:55 PM"
+              - generic [ref=e765]: "Visit ID: 4a656646-0d5c-43b4-ac51-fe804cd6758e"
+        - generic [ref=e768]:
+          - img [ref=e770]
+          - generic [ref=e772]:
+            - paragraph [ref=e773]: Visit marked as Completed
+            - paragraph
+          - button "Close" [ref=e775]:
+            - generic [ref=e776]: Close
+            - img [ref=e777]
+  - iframe [ref=e781] [cursor=pointer]:
     
-  - iframe [ref=e393]:
+  - iframe [ref=e783] [cursor=pointer]:
     - generic [active] [ref=f12e1]:
       - generic "Intercom":
         - region "Intercom messenger":

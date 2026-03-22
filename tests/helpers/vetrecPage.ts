@@ -1,4 +1,4 @@
-import type { Page } from '@playwright/test';
+import type { Locator, Page } from '@playwright/test';
 
 export class VetRecPage {
   readonly page: Page;
@@ -48,7 +48,12 @@ export class VetRecPage {
    */
   async uploadWebmFile(fileInputSelector: string, filePath: string, namePet: string) {
     await this.page.getByPlaceholder('Mr. Wiggles (optional)').fill(namePet);
+    
     await this.page.getByRole('tab', { name: 'Upload' }).click();
+    await  this.page.getByRole('button', { name: 'Acupuncture SOAP Medical' }).click();
+    await this.page.getByRole('button', { name: 'Phone Call - Summary 3/17/26' }).click();
+    await this.page.getByRole('button', { name: 'Select language' }).click();
+    await this.page.getByRole('menuitem', { name: 'English (UK)' }).click();
     await this.page.setInputFiles(fileInputSelector, filePath);
     await this.page.getByRole('button', { name: /Upload/i }).click();
     await this.page.getByRole('button', { name: /Process/i }).click();
@@ -76,31 +81,50 @@ export class VetRecPage {
   /**
    * Get date of Mapple and validate.
    */
-  async validateDate(DateOfName: string): Promise<boolean> {
-
-    const dateElement = this.page.locator(DateOfName);
-    const DateText = await dateElement.textContent();
-    const DateGet = DateText?.split(',')[0];
-    const today = new Date();
-    const DateToday = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+ async validateDate(dateSelector: string | Locator): Promise<boolean> {
+    let DateOfText: string | null = null;
     
-    return DateGet === DateToday;
+    if (typeof dateSelector === 'string') {
+        const dateElement = this.page.locator(dateSelector);
+        const count = await dateElement.count();
+        if (count === 0) {
+            console.log('Cant find the date element with selector:', dateSelector);
+            return false;
+        }
+        DateOfText = await dateElement.first().textContent();
+    } else {
+        // TypeScript ahora sabe que dateSelector es Locator
+        const isVisible = await dateSelector.isVisible().catch(() => false);
+        if (!isVisible) {
+            console.log('Cant view the date element:', dateSelector);
+            return false;
+        }
+        DateOfText = await dateSelector.textContent();
+    }
+    
+    console.log('Date of element:', DateOfText);
+    
+    if (!DateOfText) {
+        return false;
+    }
+    
+    const fechaExtraida = DateOfText.split(',')[0];
+    const today = new Date();
+    const fechaHoy = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+    
+    return fechaExtraida === fechaHoy;
 }
-   /**
-   * Get visible text from a selector.
-   */
-  async getText(selector: string) {
-    return await this.page.textContent(selector);
-  }
 
-  /**
-   * Upload a .webm file using an <input type="file"> element.
-   */
-  async switchToTranscript(Selector: string) {
+async switchToTranscript(Selector: string) {
 
-    await this.page.getByRole('tab', { name: 'Transcript' }).click();
-    await this.chooseOptionFromList(Selector, 'Completed');
+  //await this.page.getByRole('tab', { name: 'Transcript' }).click();
+  await this.page.locator('div').filter({ hasText: /^Transcript$/ }).click();
+  //await this.page.getByRole('button', { name: /Transcript/i }).click();
+  //await this.chooseOptionFromList(Selector, 'Completed');
+  await this.page.getByRole('button', { name: 'In Progress' }).click();
+  await this.page.getByLabel('In Progress').getByText('Completed').click();
    
 
   }
+
 }

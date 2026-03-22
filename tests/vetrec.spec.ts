@@ -31,18 +31,23 @@ test.describe('VetRec app', () => {
     await expect(page).toHaveURL(/\/history\?session_id=/);
 
     // Assertion that the date is correctly and status IN PROGRESS
-    const statusElement = page.getByText('In Progress').toString();
+    const taskItem = page.locator('li').filter({ hasText: 'Joey' }).first();
+    const statusElement = taskItem.locator('span.inline-flex.items-center.rounded-full');
+    const statusText = await statusElement.textContent();
     const dateElement = 'p.text-xs.whitespace-nowrap.text-gray-600';
     const isValid = await vetRec.validateDate(dateElement);
+    
     expect(isValid).toBe(true);
-    expect(statusElement).toEqual('IN PROGRESS');
+    expect(statusText?.toUpperCase()).toBe('IN PROGRESS');
 
 
     //Move to Transcipt
     const  selectorToList = '//*[@id="headlessui-listbox-button-:r2b:"]';
-    const StatusCompleted = page.getByText('Completed').toString();
+    //const StatusCompleted = page.getByText('Completed');
+    //const statusTextCompleted = await statusElement.textContent();
+    
     await vetRec.switchToTranscript(selectorToList);
-    expect(StatusCompleted).toEqual('COMPLETED');
+    expect(statusText?.toUpperCase()).toBe('COMPLETED');
 
   });
 });
