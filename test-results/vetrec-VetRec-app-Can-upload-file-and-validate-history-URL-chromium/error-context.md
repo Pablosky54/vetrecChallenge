@@ -1,0 +1,642 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Toggle Sidebar" [ref=e8] [cursor=pointer]:
+          - img
+          - generic [ref=e9]: Toggle Sidebar
+        - button "VetRec Logo" [ref=e10] [cursor=pointer]:
+          - img "VetRec Logo" [ref=e11]
+      - generic [ref=e12]:
+        - listitem [ref=e14]:
+          - button "Search" [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]:
+              - img
+        - generic [ref=e17]:
+          - listitem [ref=e18]:
+            - button "New Visit" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]:
+                - img
+          - listitem [ref=e21]:
+            - button "Records Recap" [ref=e22] [cursor=pointer]:
+              - generic [ref=e23]:
+                - img
+          - listitem [ref=e24]:
+            - button "Case Board" [ref=e25] [cursor=pointer]:
+              - generic [ref=e26]:
+                - img
+          - listitem [ref=e27]:
+            - button "Visits" [ref=e28] [cursor=pointer]:
+              - generic [ref=e29]:
+                - img
+          - listitem [ref=e31]:
+            - button "Templates" [ref=e32] [cursor=pointer]:
+              - generic [ref=e33]:
+                - img
+        - generic [ref=e34]:
+          - listitem [ref=e35]:
+            - button "Settings" [ref=e36] [cursor=pointer]:
+              - generic [ref=e37]:
+                - img
+          - listitem [ref=e38]:
+            - button "VetRec IQ" [ref=e39] [cursor=pointer]:
+              - generic [ref=e40]:
+                - img
+          - listitem [ref=e41]:
+            - button "Help Center" [ref=e42] [cursor=pointer]:
+              - generic [ref=e43]:
+                - img
+      - listitem [ref=e45]:
+        - button [ref=e46] [cursor=pointer]:
+          - img [ref=e48]
+    - main [ref=e49]:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - button "Create a visit" [ref=e58] [cursor=pointer]:
+              - img [ref=e59]
+              - text: Create a visit
+            - generic [ref=e62]:
+              - button [ref=e63] [cursor=pointer]:
+                - img [ref=e64]
+              - generic [ref=e66]:
+                - generic [ref=e67]: Date
+                - textbox "Date" [ref=e69]:
+                  - /placeholder: All dates
+                  - text: 03/21/2026 - 03/21/2026
+              - button [ref=e70] [cursor=pointer]:
+                - img [ref=e71]
+            - generic [ref=e73]:
+              - generic [ref=e74]: Patient Name
+              - searchbox "Patient Name" [ref=e75]
+          - generic [ref=e76]:
+            - button "All" [ref=e79] [cursor=pointer]:
+              - generic [ref=e80]: All
+              - img [ref=e81]
+            - button "Newest" [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Newest
+              - img [ref=e87]
+            - button "Select" [ref=e89] [cursor=pointer]
+          - generic [ref=e90]:
+            - listitem [ref=e91] [cursor=pointer]:
+              - generic [ref=e92]:
+                - img [ref=e94]
+                - generic [ref=e96]:
+                  - generic [ref=e97]:
+                    - generic [ref=e100]:
+                      - paragraph [ref=e101]: Joey
+                      - paragraph [ref=e102]: 3/21/2026, 10:01 PM
+                    - img [ref=e104]
+                  - generic [ref=e108]: Completed
+            - listitem [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - generic [ref=e114]:
+                  - generic [ref=e115]:
+                    - generic [ref=e118]:
+                      - paragraph [ref=e119]: Joey
+                      - paragraph [ref=e120]: 3/21/2026, 09:57 PM
+                    - img [ref=e122]
+                  - generic [ref=e126]: Completed
+            - listitem [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]:
+                - img [ref=e130]
+                - generic [ref=e132]:
+                  - generic [ref=e133]:
+                    - generic [ref=e136]:
+                      - paragraph [ref=e137]: Joey
+                      - paragraph [ref=e138]: 3/21/2026, 09:51 PM
+                    - img [ref=e140]
+                  - generic [ref=e144]: Completed
+            - listitem [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img [ref=e148]
+                - generic [ref=e150]:
+                  - generic [ref=e151]:
+                    - generic [ref=e154]:
+                      - paragraph [ref=e155]: Joey
+                      - paragraph [ref=e156]: 3/21/2026, 09:48 PM
+                    - img [ref=e158]
+                  - generic [ref=e162]: In Progress
+            - listitem [ref=e163] [cursor=pointer]:
+              - generic [ref=e164]:
+                - img [ref=e166]
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - generic [ref=e172]:
+                      - paragraph [ref=e173]: Joey
+                      - paragraph [ref=e174]: 3/21/2026, 09:45 PM
+                    - img [ref=e176]
+                  - generic [ref=e180]: In Progress
+            - listitem [ref=e181] [cursor=pointer]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - generic [ref=e190]:
+                      - paragraph [ref=e191]: Joey
+                      - paragraph [ref=e192]: 3/21/2026, 09:41 PM
+                    - img [ref=e194]
+                  - generic [ref=e198]: In Progress
+            - listitem [ref=e199] [cursor=pointer]:
+              - generic [ref=e200]:
+                - img [ref=e202]
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - generic [ref=e208]:
+                      - paragraph [ref=e209]: Joy
+                      - paragraph [ref=e210]: 3/21/2026, 09:17 PM
+                    - img [ref=e212]
+                  - generic [ref=e216]: In Progress
+            - listitem [ref=e217] [cursor=pointer]:
+              - generic [ref=e218]:
+                - img [ref=e220]
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - generic [ref=e226]:
+                      - paragraph [ref=e227]: Joy
+                      - paragraph [ref=e228]: 3/21/2026, 09:12 PM
+                    - img [ref=e230]
+                  - generic [ref=e234]: Completed
+            - listitem [ref=e235] [cursor=pointer]:
+              - generic [ref=e236]:
+                - img [ref=e238]
+                - generic [ref=e240]:
+                  - generic [ref=e241]:
+                    - generic [ref=e244]:
+                      - paragraph [ref=e245]: Joy
+                      - paragraph [ref=e246]: 3/21/2026, 09:05 PM
+                    - img [ref=e248]
+                  - generic [ref=e252]: Completed
+            - listitem [ref=e253] [cursor=pointer]:
+              - generic [ref=e254]:
+                - img [ref=e256]
+                - generic [ref=e258]:
+                  - generic [ref=e259]:
+                    - generic [ref=e262]:
+                      - paragraph [ref=e263]: Joy
+                      - paragraph [ref=e264]: 3/21/2026, 09:04 PM
+                    - img [ref=e266]
+                  - generic [ref=e270]: Completed
+            - listitem [ref=e271] [cursor=pointer]:
+              - generic [ref=e272]:
+                - img [ref=e274]
+                - generic [ref=e276]:
+                  - generic [ref=e277]:
+                    - generic [ref=e280]:
+                      - paragraph [ref=e281]: Joy
+                      - paragraph [ref=e282]: 3/21/2026, 09:01 PM
+                    - img [ref=e284]
+                  - generic [ref=e288]: Completed
+            - listitem [ref=e289] [cursor=pointer]:
+              - generic [ref=e290]:
+                - img [ref=e292]
+                - generic [ref=e294]:
+                  - generic [ref=e295]:
+                    - generic [ref=e298]:
+                      - paragraph [ref=e299]: Joy
+                      - paragraph [ref=e300]: 3/21/2026, 09:00 PM
+                    - img [ref=e302]
+                  - generic [ref=e306]: Completed
+            - listitem [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]:
+                - img [ref=e310]
+                - generic [ref=e312]:
+                  - generic [ref=e313]:
+                    - generic [ref=e316]:
+                      - paragraph [ref=e317]: Joy
+                      - paragraph [ref=e318]: 3/21/2026, 08:57 PM
+                    - img [ref=e320]
+                  - generic [ref=e324]: Completed
+            - listitem [ref=e325] [cursor=pointer]:
+              - generic [ref=e326]:
+                - img [ref=e328]
+                - generic [ref=e330]:
+                  - generic [ref=e331]:
+                    - generic [ref=e334]:
+                      - paragraph [ref=e335]: Joy
+                      - paragraph [ref=e336]: 3/21/2026, 08:54 PM
+                    - img [ref=e338]
+                  - generic [ref=e342]: In Progress
+            - listitem [ref=e343] [cursor=pointer]:
+              - generic [ref=e344]:
+                - img [ref=e346]
+                - generic [ref=e348]:
+                  - generic [ref=e349]:
+                    - generic [ref=e352]:
+                      - paragraph [ref=e353]: Joy
+                      - paragraph [ref=e354]: 3/21/2026, 08:51 PM
+                    - img [ref=e356]
+                  - generic [ref=e360]: Completed
+            - listitem [ref=e361] [cursor=pointer]:
+              - generic [ref=e362]:
+                - img [ref=e364]
+                - generic [ref=e366]:
+                  - generic [ref=e367]:
+                    - generic [ref=e370]:
+                      - paragraph [ref=e371]: Joy
+                      - paragraph [ref=e372]: 3/21/2026, 08:48 PM
+                    - img [ref=e374]
+                  - generic [ref=e378]: In Progress
+            - listitem [ref=e379] [cursor=pointer]:
+              - generic [ref=e380]:
+                - img [ref=e382]
+                - generic [ref=e384]:
+                  - generic [ref=e385]:
+                    - generic [ref=e388]:
+                      - paragraph [ref=e389]: Joy
+                      - paragraph [ref=e390]: 3/21/2026, 08:45 PM
+                    - img [ref=e392]
+                  - generic [ref=e396]: In Progress
+            - listitem [ref=e397] [cursor=pointer]:
+              - generic [ref=e398]:
+                - img [ref=e400]
+                - generic [ref=e402]:
+                  - generic [ref=e403]:
+                    - generic [ref=e406]:
+                      - paragraph [ref=e407]: Joy
+                      - paragraph [ref=e408]: 3/21/2026, 08:42 PM
+                    - img [ref=e410]
+                  - generic [ref=e414]: In Progress
+            - listitem [ref=e415] [cursor=pointer]:
+              - generic [ref=e416]:
+                - img [ref=e418]
+                - generic [ref=e420]:
+                  - generic [ref=e421]:
+                    - generic [ref=e424]:
+                      - paragraph [ref=e425]: Joy
+                      - paragraph [ref=e426]: 3/21/2026, 08:27 PM
+                    - img [ref=e428]
+                  - generic [ref=e432]: In Progress
+            - listitem [ref=e433] [cursor=pointer]:
+              - generic [ref=e434]:
+                - img [ref=e436]
+                - generic [ref=e438]:
+                  - generic [ref=e439]:
+                    - generic [ref=e442]:
+                      - paragraph [ref=e443]: Joy
+                      - paragraph [ref=e444]: 3/21/2026, 08:25 PM
+                    - img [ref=e446]
+                  - generic [ref=e450]: In Progress
+            - listitem [ref=e451] [cursor=pointer]:
+              - generic [ref=e452]:
+                - img [ref=e454]
+                - generic [ref=e456]:
+                  - generic [ref=e457]:
+                    - generic [ref=e460]:
+                      - paragraph [ref=e461]: Joy
+                      - paragraph [ref=e462]: 3/21/2026, 08:21 PM
+                    - img [ref=e464]
+                  - generic [ref=e468]: In Progress
+            - listitem [ref=e469] [cursor=pointer]:
+              - generic [ref=e470]:
+                - img [ref=e472]
+                - generic [ref=e474]:
+                  - generic [ref=e475]:
+                    - generic [ref=e478]:
+                      - paragraph [ref=e479]: Joy
+                      - paragraph [ref=e480]: 3/21/2026, 01:43 PM
+                    - img [ref=e482]
+                  - generic [ref=e486]: In Progress
+            - listitem [ref=e487] [cursor=pointer]:
+              - generic [ref=e488]:
+                - img [ref=e490]
+                - generic [ref=e492]:
+                  - generic [ref=e493]:
+                    - generic [ref=e496]:
+                      - paragraph [ref=e497]: Joy
+                      - paragraph [ref=e498]: 3/21/2026, 01:39 PM
+                    - img [ref=e500]
+                  - generic [ref=e504]: In Progress
+            - listitem [ref=e505] [cursor=pointer]:
+              - generic [ref=e506]:
+                - img [ref=e508]
+                - generic [ref=e510]:
+                  - generic [ref=e511]:
+                    - generic [ref=e514]:
+                      - paragraph [ref=e515]: Joy
+                      - paragraph [ref=e516]: 3/21/2026, 01:38 PM
+                    - img [ref=e518]
+                  - generic [ref=e522]: In Progress
+            - listitem [ref=e523] [cursor=pointer]:
+              - generic [ref=e524]:
+                - img [ref=e526]
+                - generic [ref=e528]:
+                  - generic [ref=e529]:
+                    - generic [ref=e532]:
+                      - paragraph [ref=e533]: Joy
+                      - paragraph [ref=e534]: 3/21/2026, 01:35 PM
+                    - img [ref=e536]
+                  - generic [ref=e540]: In Progress
+            - listitem [ref=e541] [cursor=pointer]:
+              - generic [ref=e542]:
+                - img [ref=e544]
+                - generic [ref=e546]:
+                  - generic [ref=e547]:
+                    - generic [ref=e550]:
+                      - paragraph [ref=e551]: Joy
+                      - paragraph [ref=e552]: 3/21/2026, 01:32 PM
+                    - img [ref=e554]
+                  - generic [ref=e558]: In Progress
+            - listitem [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]:
+                - img [ref=e562]
+                - generic [ref=e564]:
+                  - generic [ref=e565]:
+                    - generic [ref=e568]:
+                      - paragraph [ref=e569]: Joy
+                      - paragraph [ref=e570]: 3/21/2026, 01:26 PM
+                    - img [ref=e572]
+                  - generic [ref=e576]: In Progress
+            - listitem [ref=e577] [cursor=pointer]:
+              - generic [ref=e578]:
+                - img [ref=e580]
+                - generic [ref=e582]:
+                  - generic [ref=e583]:
+                    - generic [ref=e586]:
+                      - paragraph [ref=e587]: Joy
+                      - paragraph [ref=e588]: 3/21/2026, 01:22 PM
+                    - img [ref=e590]
+                  - generic [ref=e594]: In Progress
+            - listitem [ref=e595] [cursor=pointer]:
+              - generic [ref=e596]:
+                - img [ref=e598]
+                - generic [ref=e600]:
+                  - generic [ref=e601]:
+                    - generic [ref=e604]:
+                      - paragraph [ref=e605]: Joy
+                      - paragraph [ref=e606]: 3/21/2026, 12:46 PM
+                    - img [ref=e608]
+                  - generic [ref=e612]: In Progress
+            - listitem [ref=e613] [cursor=pointer]:
+              - generic [ref=e614]:
+                - img [ref=e616]
+                - generic [ref=e618]:
+                  - generic [ref=e619]:
+                    - generic [ref=e622]:
+                      - paragraph [ref=e623]: Joy
+                      - paragraph [ref=e624]: 3/21/2026, 12:42 PM
+                    - img [ref=e626]
+                  - generic [ref=e630]: In Progress
+            - listitem [ref=e631] [cursor=pointer]:
+              - generic [ref=e632]:
+                - img [ref=e634]
+                - generic [ref=e636]:
+                  - generic [ref=e637]:
+                    - generic [ref=e640]:
+                      - paragraph [ref=e641]: Maple
+                      - paragraph [ref=e642]: 3/21/2026, 12:38 PM
+                    - img [ref=e644]
+                  - generic [ref=e648]: In Progress
+            - listitem [ref=e649] [cursor=pointer]:
+              - generic [ref=e650]:
+                - img [ref=e652]
+                - generic [ref=e654]:
+                  - generic [ref=e655]:
+                    - generic [ref=e658]:
+                      - paragraph [ref=e659]: Maple
+                      - paragraph [ref=e660]: 3/21/2026, 12:38 PM
+                    - img [ref=e662]
+                  - generic [ref=e666]: In Progress
+            - listitem [ref=e667] [cursor=pointer]:
+              - generic [ref=e668]:
+                - img [ref=e670]
+                - generic [ref=e672]:
+                  - generic [ref=e673]:
+                    - generic [ref=e676]:
+                      - paragraph [ref=e677]: Maple
+                      - paragraph [ref=e678]: 3/21/2026, 12:35 PM
+                    - img [ref=e680]
+                  - generic [ref=e684]: In Progress
+            - listitem [ref=e685] [cursor=pointer]:
+              - generic [ref=e686]:
+                - img [ref=e688]
+                - generic [ref=e690]:
+                  - generic [ref=e691]:
+                    - generic [ref=e694]:
+                      - paragraph [ref=e695]: Maple
+                      - paragraph [ref=e696]: 3/21/2026, 12:33 PM
+                    - img [ref=e698]
+                  - generic [ref=e702]: In Progress
+            - listitem [ref=e703] [cursor=pointer]:
+              - generic [ref=e704]:
+                - img [ref=e706]
+                - generic [ref=e708]:
+                  - generic [ref=e709]:
+                    - generic [ref=e712]:
+                      - paragraph [ref=e713]: Maple
+                      - paragraph [ref=e714]: 3/21/2026, 12:31 PM
+                    - img [ref=e716]
+                  - generic [ref=e720]: In Progress
+            - listitem [ref=e721] [cursor=pointer]:
+              - generic [ref=e722]:
+                - img [ref=e724]
+                - generic [ref=e726]:
+                  - generic [ref=e727]:
+                    - generic [ref=e730]:
+                      - paragraph [ref=e731]: Maple
+                      - paragraph [ref=e732]: 3/21/2026, 11:26 AM
+                    - img [ref=e734]
+                  - generic [ref=e738]: Completed
+            - listitem [ref=e739] [cursor=pointer]:
+              - generic [ref=e740]:
+                - img [ref=e742]
+                - generic [ref=e744]:
+                  - generic [ref=e745]:
+                    - generic [ref=e748]:
+                      - paragraph [ref=e749]: Maple
+                      - paragraph [ref=e750]: 3/21/2026, 11:24 AM
+                    - img [ref=e752]
+                  - generic [ref=e756]: In Progress
+        - generic [ref=e758]:
+          - generic [ref=e759]:
+            - generic [ref=e760]:
+              - button "Choose visit emoji" [ref=e763] [cursor=pointer]:
+                - generic [ref=e764]: 📄
+              - generic [ref=e765]:
+                - generic [ref=e766]:
+                  - generic [ref=e767]: Joey
+                  - generic [ref=e768] [cursor=pointer]: Edit
+                - generic [ref=e769]:
+                  - generic [ref=e770]: 3/21/2026, 10:01 PM
+                  - generic [ref=e771] [cursor=pointer]: Edit
+            - generic [ref=e773]:
+              - generic [ref=e775]:
+                - generic [ref=e776]: Status
+                - button "Completed" [active] [ref=e778] [cursor=pointer]:
+                  - generic [ref=e779]: Completed
+                  - img [ref=e780]
+              - generic [ref=e782]:
+                - button "Add to visit" [ref=e785] [cursor=pointer]:
+                  - img [ref=e787]
+                  - generic [ref=e789]: Add to visit
+                - button "Phone" [ref=e792] [cursor=pointer]:
+                  - generic [ref=e793]:
+                    - img [ref=e794]
+                    - generic [ref=e796]: Phone
+                - button "D.A.V.I.D" [ref=e799] [cursor=pointer]:
+                  - img [ref=e800]
+                  - generic [ref=e802]: D.A.V.I.D
+                - button "Send email" [ref=e805] [cursor=pointer]:
+                  - generic [ref=e806]:
+                    - img [ref=e807]
+                    - generic [ref=e809]: Email
+                - button [ref=e812] [cursor=pointer]:
+                  - img [ref=e813]
+          - navigation "Tabs" [ref=e816]:
+            - generic [ref=e817] [cursor=pointer]:
+              - img [ref=e819]
+              - generic [ref=e824]: Overview
+            - generic [ref=e825] [cursor=pointer]:
+              - img [ref=e827]
+              - generic [ref=e829]: Records Recap
+            - generic [ref=e830] [cursor=pointer]:
+              - img [ref=e831]
+              - generic [ref=e834]: Notes
+            - generic [ref=e835] [cursor=pointer]:
+              - img [ref=e837]
+              - generic [ref=e840]: Discharges
+            - generic [ref=e841] [cursor=pointer]:
+              - img [ref=e843]
+              - generic [ref=e848]: Transcript
+          - generic [ref=e849]:
+            - generic [ref=e851]:
+              - generic [ref=e853]:
+                - generic [ref=e854]:
+                  - img
+                  - searchbox "Search transcripts..." [ref=e855]
+                - generic [ref=e856]:
+                  - button "Reprocess" [ref=e859] [cursor=pointer]:
+                    - generic [ref=e860]:
+                      - img [ref=e861]
+                      - generic [ref=e863]: Reprocess
+                  - button [ref=e866] [cursor=pointer]:
+                    - img [ref=e868]
+              - generic [ref=e872]:
+                - button "Abdominal X-Rays for Possible Hair Tie Ingestion (from Mar 21, 2026, 10:01 PM) English (US)" [expanded] [ref=e873] [cursor=pointer]:
+                  - generic [ref=e874]:
+                    - generic [ref=e875]:
+                      - img [ref=e876]
+                      - generic [ref=e879]: Abdominal X-Rays for Possible Hair Tie Ingestion (from Mar 21, 2026, 10:01 PM)
+                    - generic [ref=e880]:
+                      - img [ref=e883]
+                      - generic [ref=e885]: English (US)
+                  - img [ref=e886]
+                - generic [ref=e889]:
+                  - generic [ref=e890]:
+                    - generic [ref=e891]: (6 MB)
+                    - generic [ref=e892]: Your browser does not support the audio element.
+                    - generic [ref=e893]:
+                      - button [ref=e896] [cursor=pointer]:
+                        - img [ref=e898]
+                      - button [ref=e902] [cursor=pointer]:
+                        - img [ref=e904]
+                      - button [disabled] [ref=e908]:
+                        - img [ref=e910]
+                      - button [ref=e914] [cursor=pointer]:
+                        - img [ref=e916]
+                  - generic [ref=e920]:
+                    - generic [ref=e921] [cursor=pointer]:
+                      - generic [ref=e922]:
+                        - button "Copy transcript line" [ref=e923]:
+                          - img [ref=e924]
+                        - button "Copy link" [ref=e926]:
+                          - img [ref=e927]
+                      - generic [ref=e930]:
+                        - generic [ref=e931]: 10:01:20 PM
+                        - generic [ref=e932]:
+                          - generic [ref=e933]:
+                            - generic [ref=e934]: Doctor
+                            - generic [ref=e935]: Labels don't affect notes
+                          - generic [ref=e936]: Okay, maple is a 3 year old cat that's presented for acute vomiting and possible ingestion of foreign material. Which is hair ties. I'm Dr. Kyle. I'm going to talk through everything out loud. For a medical record. We're here today with Maple three year old female spay cat who's been vomiting. When did the vomiting first start?
+                    - generic [ref=e937] [cursor=pointer]:
+                      - generic [ref=e938]:
+                        - button "Copy transcript line" [ref=e939]:
+                          - img [ref=e940]
+                        - button "Copy link" [ref=e942]:
+                          - img [ref=e943]
+                      - generic [ref=e946]:
+                        - generic [ref=e947]: 10:01:48 PM
+                        - generic [ref=e948]:
+                          - generic [ref=e950]: Doctor
+                          - generic [ref=e951]: Okay, last night. So the vomiting started last night. Three episodes of vomit, mostly food and clear fluid. No blood, no bile. Any chance she got into anything? Plants, string, hair ties, rubber bands? Okay, so she likes hair ties and you think she may ate one yesterday. Got it. Okay, so possible foreign body, specifically hair tie ingestion. That's really important. Thank you. Any diarrhea, coughing, sneezing,
+                    - generic [ref=e952] [cursor=pointer]:
+                      - generic [ref=e953]:
+                        - button "Copy transcript line" [ref=e954]:
+                          - img [ref=e955]
+                        - button "Copy link" [ref=e957]:
+                          - img [ref=e958]
+                      - generic [ref=e961]:
+                        - generic [ref=e962]: 10:02:18 PM
+                        - generic [ref=e963]:
+                          - generic [ref=e965]: Doctor
+                          - generic [ref=e966]: changes in appetite, change in thirst or urination. So no diarrhea, appetite is decreased and she didn't eat breakfast. Any medications? None. Any supplements? None. Okay, for the exam portion. So Maple weighs 9.8 pounds today. Temperature is 100.9, heart rate is 180, respiratory rate is 32. She is bar but slightly tense. Her abdomen is mildly painful on palpation, especially in
+                    - generic [ref=e967] [cursor=pointer]:
+                      - generic [ref=e968]:
+                        - button "Copy transcript line" [ref=e969]:
+                          - img [ref=e970]
+                        - button "Copy link" [ref=e972]:
+                          - img [ref=e973]
+                      - generic [ref=e976]:
+                        - generic [ref=e977]: 10:02:48 PM
+                        - generic [ref=e978]:
+                          - generic [ref=e980]: Doctor
+                          - generic [ref=e981]: the mid cranial region. No obvious mass, but she is guarding. No dehydration. Mucous membranes are pink, CRT is 1.5 seconds. Everything else is normal on exam. For the assessment based on the vomiting and possible hair tie ingestion, my differentials include GI upset from dietary indiscretion, gastritis, early foreign body obstruction or linear foreign body obstruction, less likely pancreatitis. So the
+                    - generic [ref=e982] [cursor=pointer]:
+                      - generic [ref=e983]:
+                        - button "Copy transcript line" [ref=e984]:
+                          - img [ref=e985]
+                        - button "Copy link" [ref=e987]:
+                          - img [ref=e988]
+                      - generic [ref=e991]:
+                        - generic [ref=e992]: 10:03:18 PM
+                        - generic [ref=e993]:
+                          - generic [ref=e995]: Doctor
+                          - generic [ref=e996]: plan section. So the plan I'm going to walk you through has everything in detail and this is really important for the medical record. For Maple, I'd recommend abdominal X-rays first. If the X-ray is equivocal, meaning it doesn't clearly show obstruction, then we would maybe want to pursue an abdominal ultrasound. If we see a foreign body or plication on ultrasound, surgery would be what's recommended for treatment today I'm going to recommend giving cerenia at 1 milligram per kilogram subcutaneously
+                    - generic [ref=e997] [cursor=pointer]:
+                      - generic [ref=e998]:
+                        - button "Copy transcript line" [ref=e999]:
+                          - img [ref=e1000]
+                        - button "Copy link" [ref=e1002]:
+                          - img [ref=e1003]
+                      - generic [ref=e1006]:
+                        - generic [ref=e1007]: 10:03:48 PM
+                        - generic [ref=e1008]:
+                          - generic [ref=e1010]: Doctor
+                          - generic [ref=e1011]: to control nausea. I'd also recommend starting with sub-Q fluids. We give about 100 mils of something called LRS or Lactated Ringer's to help with hydration. And then at home we'll start an anti nausea medication called Ondansetron suit. Two milligrams twice daily for three to five days. And we'll also start a bland diet. Boiled chicken or prescription GI diet, small portions every four to six hours. If Maple vomits more
+                    - generic [ref=e1012] [cursor=pointer]:
+                      - generic [ref=e1013]:
+                        - button "Copy transcript line" [ref=e1014]:
+                          - img [ref=e1015]
+                        - button "Copy link" [ref=e1017]:
+                          - img [ref=e1018]
+                      - generic [ref=e1021]:
+                        - generic [ref=e1022]: 10:04:18 PM
+                        - generic [ref=e1023]:
+                          - generic [ref=e1025]: Doctor
+                          - generic [ref=e1026]: than twice in 24 hours, you need Demogene immediately. If Maple stops eating for 2012 hours, she needs imaging. If she becomes lethargic or painful, that is an emergency. The owner agreed to do X-rays and fluids today and will hold off on the ultrasound unless X-rays are unclear. Owner approved X-rays, Cerenia injection and SQ fluids. Owner declines ultrasound for now and we'll call her later today with X-ray results and recheck in 24 to 48 hours,
+                    - generic [ref=e1027] [cursor=pointer]:
+                      - generic [ref=e1028]:
+                        - button "Copy transcript line" [ref=e1029]:
+                          - img [ref=e1030]
+                        - button "Copy link" [ref=e1032]:
+                          - img [ref=e1033]
+                      - generic [ref=e1036]:
+                        - generic [ref=e1037]: 10:04:49 PM
+                        - generic [ref=e1038]:
+                          - generic [ref=e1040]: Doctor
+                          - generic [ref=e1041]: sooner if vomiting returns.
+            - generic [ref=e1042]: "Visit ID: 5f09b9aa-8ed7-4f1d-8331-cb60c082be0a"
+  - iframe [ref=e1043]:
+    
+  - iframe [ref=e1045]:
+    - generic [active] [ref=f12e1]:
+      - generic "Intercom":
+        - region "Intercom messenger":
+          - button "Open Intercom Messenger" [ref=f12e2] [cursor=pointer]:
+            - img [ref=f12e4]
+            - img [ref=f12e7]
+```

@@ -16,8 +16,6 @@ export class VetRecPage {
 
   /**
    * Perform username/password login.
-   *
-   * Update selectors to match the real login form.
    */
   async login(username: string, password: string) {
     
@@ -26,11 +24,6 @@ export class VetRecPage {
     await this.page.getByPlaceholder('Enter your password').fill(password);
     await this.page.getByRole('button', { name: /continue/i }).click();
 
-
-    /*await this.page.fill('input[name="username"]', username);
-    await this.page.fill('input[name="password"]', password);
-    await this.page.click('button[type="submit"]');
-    **/
   }
 
 
@@ -43,13 +36,16 @@ export class VetRecPage {
   }
 
   //Get ID of page after scrib page
-  async getSessionIdFromUrl(): Promise<string> {
+   async getSessionId(timeout: number = 10000): Promise<string> {
+ 
+    await this.page.waitForURL(url => url.searchParams.has('session_id'), { timeout });
+    
     const currentUrl = this.page.url();
     const url = new URL(currentUrl);
     const sessionId = url.searchParams.get('session_id');
     
     if (!sessionId) {
-        throw new Error('session_id no encontrado en la URL');
+        throw new Error('session_id no found on URL');
     }
     
     return sessionId;
@@ -73,16 +69,6 @@ export class VetRecPage {
 
   }
 
-  /**
-   * Choose an option from a list/dropdown.
-   *
-   * @param listSelector Selector for the list container (e.g. a <select> or custom dropdown trigger).
-   * @param optionText Visible text of the option to choose.
-   */
-  async chooseOptionFromList(listSelector: string, optionText: string) {
-    await this.page.click(listSelector);
-    await this.page.click(`text=${optionText}`);
-  }
 
   /**
    * Click a button by selector.
@@ -121,19 +107,16 @@ export class VetRecPage {
         return false;
     }
     
-    const fechaExtraida = DateOfText.split(',')[0];
+    const DateOfElement = DateOfText.split(',')[0];
     const today = new Date();
-    const fechaHoy = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+    const DateOfToday = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
     
-    return fechaExtraida === fechaHoy;
+    return DateOfElement === DateOfToday;
 }
 
 async switchToTranscript(Selector: string) {
 
-  //await this.page.getByRole('tab', { name: 'Transcript' }).click();
   await this.page.locator('div').filter({ hasText: /^Transcript$/ }).click();
-  //await this.page.getByRole('button', { name: /Transcript/i }).click();
-  //await this.chooseOptionFromList(Selector, 'Completed');
   await this.page.getByRole('button', { name: 'In Progress' }).click();
   await this.page.getByLabel('In Progress').getByText('Completed').click();
    

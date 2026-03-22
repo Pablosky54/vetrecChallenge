@@ -14,18 +14,16 @@ let vetRec: VetRecPage;
 test.beforeEach(async ({ page }) => {
     
       vetRec = new VetRecPage(page);
+
+      await vetRec.goto();
+      // Login with provided credentials.
+      await vetRec.login(USERNAME, PASSWORD);
 });
 
 
 test.describe('VetRec app', () => {
   test('Can login and grant microphone', async ({ page }) => {
     
-
-    await vetRec.goto();
-
-    // Login with provided credentials.
-    await vetRec.login(USERNAME, PASSWORD); 
-
     // Grant microphone permission for this test run.
     await vetRec.grantMicrophonePermission();
     });
@@ -33,8 +31,8 @@ test.describe('VetRec app', () => {
   test('Can upload file, and validate history URL', async ({ page }) => {
     const nameOfPet = 'Joey';
     await vetRec.uploadWebmFile('#dropzone-file', SAMPLE_WEBM, nameOfPet);
-    const sessionId = await vetRec.getSessionIdFromUrl();
-    console.log('Session ID:', sessionId);
+    const sessionId = await vetRec.getSessionId();
+    
 
     // Assertion that the URL includes the session history path.
     await expect(page).toHaveURL(new RegExp(`/history\\?session_id=${sessionId}&tab=notes`));
@@ -51,9 +49,11 @@ test.describe('VetRec app', () => {
 
     //Move to Transcipt
     const  selectorToList = '//*[@id="headlessui-listbox-button-:r2b:"]';
+    
     await vetRec.switchToTranscript(selectorToList);
 
     //Assercion is completed
+    await expect(statusElement).toHaveText('COMPLETED', { timeout: 30000 });
     expect(statusText?.toUpperCase()).toBe('COMPLETED');
 
   });
