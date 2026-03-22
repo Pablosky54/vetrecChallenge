@@ -6,32 +6,41 @@ const USERNAME = 'cefit.pablo@gmail.com'
 const PASSWORD = 'VetRecQA!'
 //process.env.VETREC_PASS ?? 'your_password';
 
-// Path to a .webm file used for upload. Replace with a real file for real tests.
+// Path to a .webm file used for upload.
 const SAMPLE_WEBM = 'tests\\fixtures\\InputSound.webm'
+
+//Ability to manage page
+let vetRec: VetRecPage;
+test.beforeEach(async ({ page }) => {
+    
+      vetRec = new VetRecPage(page);
+});
 
 
 test.describe('VetRec app', () => {
-  test('can login, grant microphone, upload file, and validate history URL', async ({ page }) => {
-    const vetRec = new VetRecPage(page);
+  test('Can login and grant microphone', async ({ page }) => {
+    
 
     await vetRec.goto();
 
-    // Login flow (update selectors as needed)
+    // Login with provided credentials.
     await vetRec.login(USERNAME, PASSWORD); 
 
     // Grant microphone permission for this test run.
-    // This is usually needed when the app prompts for microphone access.
     await vetRec.grantMicrophonePermission();
-
-    // Upload a webm file.
-    const nameOfPet = 'Joy';
+    });
+    
+  test('Can upload file, and validate history URL', async ({ page }) => {
+    const nameOfPet = 'Joey';
     await vetRec.uploadWebmFile('#dropzone-file', SAMPLE_WEBM, nameOfPet);
+    const sessionId = await vetRec.getSessionIdFromUrl();
+    console.log('Session ID:', sessionId);
 
     // Assertion that the URL includes the session history path.
-    await expect(page).toHaveURL(/\/history\?session_id=/);
+    await expect(page).toHaveURL(new RegExp(`/history\\?session_id=${sessionId}&tab=notes`));
 
     // Assertion that the date is correctly and status IN PROGRESS
-    const taskItem = page.locator('li').filter({ hasText: 'Joey' }).first();
+    const taskItem = page.locator('li').filter({ hasText: nameOfPet }).first();
     const statusElement = taskItem.locator('span.inline-flex.items-center.rounded-full');
     const statusText = await statusElement.textContent();
     const dateElement = 'p.text-xs.whitespace-nowrap.text-gray-600';
@@ -40,13 +49,11 @@ test.describe('VetRec app', () => {
     expect(isValid).toBe(true);
     expect(statusText?.toUpperCase()).toBe('IN PROGRESS');
 
-
     //Move to Transcipt
     const  selectorToList = '//*[@id="headlessui-listbox-button-:r2b:"]';
-    //const StatusCompleted = page.getByText('Completed');
-    //const statusTextCompleted = await statusElement.textContent();
-    
     await vetRec.switchToTranscript(selectorToList);
+
+    //Assercion is completed
     expect(statusText?.toUpperCase()).toBe('COMPLETED');
 
   });

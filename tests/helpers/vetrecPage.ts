@@ -41,6 +41,19 @@ export class VetRecPage {
      debugger;
     await this.page.context().grantPermissions(['microphone'], { origin: this.page.url() });
   }
+
+  //Get ID of page after scrib page
+  async getSessionIdFromUrl(): Promise<string> {
+    const currentUrl = this.page.url();
+    const url = new URL(currentUrl);
+    const sessionId = url.searchParams.get('session_id');
+    
+    if (!sessionId) {
+        throw new Error('session_id no encontrado en la URL');
+    }
+    
+    return sessionId;
+}
     
 
   /**
