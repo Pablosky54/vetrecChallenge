@@ -118,6 +118,7 @@ async switchToTranscript(Selector: string) {
 
   await this.page.locator('div').filter({ hasText: /^Transcript$/ }).click();
   await this.page.getByRole('button', { name: 'In Progress' }).click();
+  await this.page.waitForTimeout(1000);
   await this.page.getByLabel('In Progress').getByText('Completed').click();
    
 

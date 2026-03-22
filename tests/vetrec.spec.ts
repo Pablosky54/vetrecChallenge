@@ -53,8 +53,12 @@ test.describe('VetRec app', () => {
     await vetRec.switchToTranscript(selectorToList);
 
     //Assercion is completed
-    await expect(statusElement).toHaveText('COMPLETED', { timeout: 30000 });
-    expect(statusText?.toUpperCase()).toBe('COMPLETED');
+    await vetRec.page.waitForTimeout(2000);
+     const taskItemCompleted = page.locator('li').filter({ hasText: nameOfPet }).first();
+    const statusElementCompleted = taskItemCompleted.locator('span.inline-flex.items-center.rounded-full');
+    const statusTextCompleted = await statusElement.textContent();
+    await expect(statusElementCompleted).toHaveText('Completed', { timeout: 30000 });
+    expect(statusTextCompleted?.toUpperCase()).toBe('COMPLETED');
 
   });
 });
