@@ -51,8 +51,7 @@ npx playwright test tests/vetrec.spec.ts
 - Clicking buttons
 - Reading text from the page
 - Assertion that the URL contains `/history?session_id=<session_id>`
+- Assertion of current date
+- Assertion of status 'IN PROGRESS/COMPLETED'
 
-## Notes
 
-- The selectors in `tests/vetrec.spec.ts` are placeholders and will likely need to be updated to match the actual DOM structure of `https://app.vetrec.io/`.
-- Replace `tests/fixtures/sample.webm` with a real `.webm` file for file upload tests.
